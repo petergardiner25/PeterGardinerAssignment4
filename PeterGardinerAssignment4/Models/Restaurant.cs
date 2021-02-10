@@ -7,6 +7,7 @@ namespace PeterGardinerAssignment4.Models
 {
     public class Restaurant
     {
+        //make getters and setters for each field
         public int RestaurantRank { get; set;  }
         public string RestaurantName { get; set; }
         public string? FavoriteDish { get; set; } = "it's all tasty!";
@@ -14,6 +15,7 @@ namespace PeterGardinerAssignment4.Models
         public string? Phone { get; set; }
         public string? Link { get; set; } = "Coming Soon";
 
+        // set list of restaurant objects
         public static Restaurant[] GetRestaruants()
         {
             Restaurant r1 = new Restaurant

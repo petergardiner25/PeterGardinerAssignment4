@@ -20,6 +20,7 @@ namespace PeterGardinerAssignment4.Controllers
 
         public IActionResult Index()
         {
+            // list our restaruants from restaurant model
             List<string> restaurantList = new List<string>();
 
             foreach (Restaurant r in Restaurant.GetRestaruants())
@@ -39,6 +40,7 @@ namespace PeterGardinerAssignment4.Controllers
         [HttpPost]
         public IActionResult Suggestions(ApplicationResponse AppResponse)
         {
+            //make sure form is valid
             if (ModelState.IsValid)
             {
                 Storage.AddApplication(AppResponse);

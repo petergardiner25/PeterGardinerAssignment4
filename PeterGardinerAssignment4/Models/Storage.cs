@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 
 namespace PeterGardinerAssignment4.Models
 {
+    // create storage for listed page using IEnumerable
     public class Storage
     {
         private static List<ApplicationResponse> applications = new List<ApplicationResponse>();

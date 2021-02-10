@@ -14,6 +14,7 @@ namespace PeterGardinerAssignment4.Models
         public string RName { get; set; }
         [Required]
         public string FavDish { get; set; }
+        //make phone numbers only 10 numbers long and have various acceptable formats
         [RegularExpression(@"\(?\d{3}\)?-? *\d{3}-? *-?\d{4}", ErrorMessage ="Invalid Phone Number")]
         public string PhoneNumber { get; set; }
     }
