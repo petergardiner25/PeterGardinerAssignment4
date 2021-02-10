@@ -1,0 +1,28 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model IEnumerable<PeterGardinerAssignment4.Models.ApplicationResponse>
+
+<div>
+    <table class="table">
+        <thead>
+            <tr><th scope="col">  Name  </th><th scope="col">  Restaurant  </th><th scope="col">  Favorite Dish  </th><th scope="col">  Phone Number  </th>
+
+        </thead>
+        <tbody>
+            <!-- print table and stop Independence day with an if statement -->
+            @foreach (PeterGardinerAssignment4.Models.ApplicationResponse x in Model)
+            { 
+                    <tr>
+                        <td>@x.Name</td>
+                        <td>@x.RName</td>
+                        <td>@x.FavDish</td>
+                        <td>@x.PhoneNumber</td>
+                    </tr>
+            }
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,49 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model PeterGardinerAssignment4.Models.ApplicationResponse
+
+<div>
+    <h1>Leave Us a Suggestion!</h1>
+</div>
+
+<div class="form-group">
+    <form asp-action="Suggestions" method="post" class="">
+
+        <label asp-for="Name" class="form-control">Your Name:</label>
+        <input asp-for="Name" class="form-control" />
+        <br />
+
+        <span asp-validation-for="Name"></span>
+
+
+        <label asp-for="RName" class="form-control">Restaurant Name:</label>
+        <input asp-for="RName" class="form-control" />
+        <br />
+
+        <span asp-validation-for="RName"></span>
+
+
+        <label asp-for="FavDish" class="form-control">Favorite Dish:</label>
+        <input asp-for="FavDish" class="form-control" />
+
+        <br />
+
+        <span asp-validation-for="FavDish"></span>
+
+
+        <label asp-for="PhoneNumber" class="form-control">Restaurant Phone #:</label>
+        <input asp-for="PhoneNumber" class="form-control" />
+
+        <br />
+        <span asp-validation-for="PhoneNumber"></span>
+
+
+        <button type="submit" class="form-control">Submit</button>
+
+
+    </form>
+</div>
