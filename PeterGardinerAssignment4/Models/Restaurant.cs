@@ -8,7 +8,12 @@ namespace PeterGardinerAssignment4.Models
     public class Restaurant
     {
         //make getters and setters for each field
-        public int RestaurantRank { get; set;  }
+        public Restaurant(int rank)
+        {
+            RestaurantRank = rank;
+        }
+        
+        public int RestaurantRank { get;  }
         public string RestaurantName { get; set; }
         public string? FavoriteDish { get; set; } = "it's all tasty!";
         public string Address { get; set; }
@@ -18,25 +23,22 @@ namespace PeterGardinerAssignment4.Models
         // set list of restaurant objects
         public static Restaurant[] GetRestaruants()
         {
-            Restaurant r1 = new Restaurant
+            Restaurant r1 = new Restaurant(1)
             {
-                RestaurantRank = 1,
                 RestaurantName = "Joes",
                 Address = "42 W 2189 N ",
                 Phone = "801-785-8144",
             };
 
-            Restaurant r2 = new Restaurant
+            Restaurant r2 = new Restaurant(2)
             {
-                RestaurantRank = 2,
                 RestaurantName = "sue",
                 Address = "41 W 2189 N ",
                 Phone = "801-784-8144",
             };
 
-            Restaurant r3 = new Restaurant
+            Restaurant r3 = new Restaurant(3)
             {
-                RestaurantRank = 3,
                 RestaurantName = "billy bob's",
                 FavoriteDish = "the sandwich",
                 Address = "23s 34n",
@@ -44,9 +46,8 @@ namespace PeterGardinerAssignment4.Models
                 Link = "www.bilbob.com"
             };
 
-            Restaurant r4 = new Restaurant
+            Restaurant r4 = new Restaurant(4)
             {
-                RestaurantRank = 4,
                 RestaurantName = "yippe's",
                 FavoriteDish = "gourmet bowl of cereal",
                 Address = "3434n 2323e",
@@ -54,9 +55,8 @@ namespace PeterGardinerAssignment4.Models
                 Link = "www.bilbobyips.com"
             };
 
-            Restaurant r5 = new Restaurant
+            Restaurant r5 = new Restaurant(5)
             {
-                RestaurantRank = 5,
                 RestaurantName = "billy bob's sister",
                 FavoriteDish = "burger",
                 Address = "43w 2213n",

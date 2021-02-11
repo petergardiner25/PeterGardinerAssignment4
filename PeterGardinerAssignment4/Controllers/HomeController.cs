@@ -25,7 +25,7 @@ namespace PeterGardinerAssignment4.Controllers
 
             foreach (Restaurant r in Restaurant.GetRestaruants())
             {
-                restaurantList.Add(string.Format($"{r.RestaurantRank}. {r.RestaurantName}, {r.FavoriteDish}, {r.Address}, {r.Phone}, {r.Link} "));
+                restaurantList.Add(string.Format($"{r.RestaurantRank}. {r.RestaurantName} - Favorite Dish: {r.FavoriteDish} -  Address: {r.Address} - Phone Number: {r.Phone} - Website: {r.Link} "));
             }
 
             return View(restaurantList);
