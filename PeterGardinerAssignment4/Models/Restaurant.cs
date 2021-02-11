@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
 
 namespace PeterGardinerAssignment4.Models
 {
@@ -13,9 +14,12 @@ namespace PeterGardinerAssignment4.Models
             RestaurantRank = rank;
         }
         
+        
         public int RestaurantRank { get;  }
+        [Required]
         public string RestaurantName { get; set; }
         public string? FavoriteDish { get; set; } = "it's all tasty!";
+        [Required]
         public string Address { get; set; }
         public string? Phone { get; set; }
         public string? Link { get; set; } = "Coming Soon";
